@@ -202,10 +202,12 @@ ja:
       default: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
-    pm: 午後
+    pm: 午後w
   views:
     messages:
       create_agenda: 'アジェンダ作成に成功しました！'
+      delete_agenda: 'アジェンダを削除しました！'
+      delete_agenda_notice: '作成済みのアジェンダが削除されました'
       create_article: '記事作成に成功しました！'
       update_article: '記事更新に成功しました！'
       assigned: 'アサインしました！'

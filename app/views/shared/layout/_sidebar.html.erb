@@ -33,7 +33,8 @@
             <a href="#" class="nav-link">
               <i class="fa fa-circle-o nav-icon"></i>
               <p>
-                <%= agenda.title %>
+                <%= agenda.title %> 
+                <object><%= link_to I18n.t('views.button.delete'), agenda_path(agenda), method: :delete, class: 'btn btn-danger' %></object>
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
@@ -41,7 +42,7 @@
               <% agenda.articles.each do |article| %>
                 <li class="nav-item">
                   <%= link_to article_path(article), class: 'nav-link' do %>
-                    <p><%= article.title %></p>
+                    <p><%= article.title %></p> 
                   <% end %>
                 </li>
               <% end %>
